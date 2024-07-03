@@ -1,0 +1,63 @@
+{
+    "name": "hashplate-cn",
+    "private": false,
+    "version": "1.0.0",
+    "type": "module",
+    "main": "./dist/index.umd.cjs",
+    "module": "./dist/index.js",
+    "license": "MIT",
+    "author": {
+        "name": "cunzaizhuyi",
+        "url": "https://github.com/cunzaizhuyi/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cunzaizhuyi/hashplate-cn.git"
+    },
+    "homepage": "https://github.com/cunzaizhuyi/hashplate-cn#readme",
+    "url": "https://github.com/cunzaizhuyi/hashplate-cn",
+    "bugs": {
+        "url": "https://github.com/cunzaizhuyi/hashplate-cn/issues"
+    },
+    "keywords": [
+        "hash",
+        "hashing",
+        "hash generator",
+        "human readable"
+    ],
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "dev": "vite",
+        "build": "rimraf dist && vite build",
+        "build:safe": "tsc && vite build",
+        "preview": "vite preview",
+        "test": "vitest",
+        "dev:test": "vitest --ui"
+    },
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "require": "./dist/index.umd.cjs",
+            "import": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist/**"
+    ],
+    "devDependencies": {
+        "@types/node": "^20.14.9",
+        "@typescript-eslint/eslint-plugin": "^7.14.1",
+        "@typescript-eslint/parser": "^7.14.1",
+        "@vitest/ui": "^1.6.0",
+        "eslint": "^8.57.0",
+        "eslint-import-resolver-alias": "^1.1.2",
+        "eslint-import-resolver-typescript": "^3.6.1",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-sort-keys-custom-order": "^1.0.5",
+        "rimraf": "^5.0.7",
+        "typescript": "^5.5.2",
+        "vite": "^5.3.2",
+        "vite-plugin-dts": "^3.9.1",
+        "vitest": "^1.6.0"
+    }
+}
