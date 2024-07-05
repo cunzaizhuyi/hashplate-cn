@@ -12,7 +12,7 @@ pnpm add -D hashplate-cn
 import { hashplate } from "hashplate-cn";
 
 const hash = hashplate("Hello World!");
-// returns "🍢 渝G·VGUA1 🪣"
+// returns "🍢 渝F·WGVA2 🪣"
 ```
 
 ## Format
@@ -30,7 +30,7 @@ import { hashplate } from "hashplate-cn";
 const hash = hashplate("Hello World!", {
     hasEmoji: false,
 });
-// returns "渝G·VGUA1"
+// returns "渝F·WGVA2"
 ```
 ## Why?
 

@@ -13,8 +13,8 @@ export function hashplate(value: string, options?: IOption) {
 
     // 京A 123TV
     const province = "黑吉辽京津晋冀鲁豫蒙沪渝苏浙皖闽湘赣鄂桂琼川贵云藏陕甘宁青新粤";
-    const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    const alphanumeric = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    const alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ"; // removed "I" and "O"
+    const alphanumeric = "ABCDEFGHJKLMNPQRSTUVWXYZ0123456789"; // removed "I" and "O"
 
     const rand_p = Math.floor(random() * province.length);
     const rand_alphabet = Math.floor(random() * alphabet.length);
